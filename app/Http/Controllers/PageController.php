@@ -30,4 +30,7 @@ class PageController extends Controller
     public function careers(){
         return view('careers');
     }
+    public function interview(){
+        return view('interview.index');
+    }
 }
