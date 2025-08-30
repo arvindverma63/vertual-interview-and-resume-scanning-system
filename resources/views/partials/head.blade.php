@@ -1,9 +1,25 @@
 <head>
     <meta charset="utf-8">
-    <title>Startup - Startup Website Template</title>
+    <title>Rawsio IT Consulting | Software Development & Technology Solutions</title>
     <meta content="width=device-width, initial-scale=1.0" name="viewport">
-    <meta content="Free HTML Templates" name="keywords">
-    <meta content="Free HTML Templates" name="description">
+
+    <!-- SEO Meta Tags -->
+    <meta name="description" content="Rawsio.com is a leading IT consulting company specializing in software development, web solutions, cloud services, and digital transformation. Empower your business with our technology expertise.">
+    <meta name="keywords" content="Rawsio, IT consulting, software development, IT services, web development, cloud solutions, digital transformation, technology consulting, IT company, enterprise solutions">
+    <meta name="author" content="Rawsio IT Consulting">
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:title" content="Rawsio IT Consulting | Software Development & Technology Solutions">
+    <meta property="og:description" content="Rawsio.com is a trusted IT consulting company offering expert software development, cloud, and digital transformation services.">
+    <meta property="og:url" content="https://www.rawsio.com/">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="https://www.rawsio.com/img/seo-banner.jpg">
+
+    <!-- Twitter -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Rawsio IT Consulting | Software Development & Technology Solutions">
+    <meta name="twitter:description" content="Rawsio.com is a trusted IT consulting company delivering software development, IT services, and cloud solutions.">
+    <meta name="twitter:image" content="https://www.rawsio.com/img/seo-banner.jpg">
 
     <!-- Favicon -->
     <link href="img/favicon.ico" rel="icon">
