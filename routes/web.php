@@ -18,7 +18,17 @@ Route::get('/quote', [PageController::class, 'quote'])->name('quote');
 Route::get('/feature', [PageController::class, 'feature'])->name('feature');
 Route::get('/contact', [PageController::class, 'contact'])->name('contact');
 Route::get('/service', [PageController::class, 'service'])->name('service');
-Route::get('/feature',[PageController::class,'feature'])->name('feature');
-Route::get('/careers',[PageController::class,'careers'])->name('careers');
+Route::get('/feature', [PageController::class, 'feature'])->name('feature');
+Route::get('/careers', [PageController::class, 'careers'])->name('careers');
 Route::post('/career/store', [CareerController::class, 'store'])->name('career.store');
-Route::get('/interview',[PageController::class,'interview'])->name('interview');
+Route::get('/interview', [PageController::class, 'interview'])->name('interview');
+
+use App\Http\Controllers\InterviewController;
+
+// Route to display the form
+Route::get('/interview-form', function () {
+    return view('interview_form');
+})->name('interview-form');
+
+// Route to handle form submission
+Route::post('/send-interview-invitation', [InterviewController::class, 'sendInvitation'])->name('send-interview-invitation');
