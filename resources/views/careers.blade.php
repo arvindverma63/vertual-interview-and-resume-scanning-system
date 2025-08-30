@@ -7,36 +7,58 @@
 <div class="container my-5">
     <h2 class="text-center mb-4">Career Application</h2>
     <div class="card shadow-lg p-4 rounded-3">
-        <form id="careerForm" action="#" method="POST" enctype="multipart/form-data">
+
+        <!-- ✅ Success Message -->
+        @if(session('success'))
+            <div class="alert alert-success alert-dismissible fade show" role="alert">
+                {{ session('success') }}
+                <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+            </div>
+        @endif
+
+        <!-- ❌ Error Messages -->
+        @if($errors->any())
+            <div class="alert alert-danger alert-dismissible fade show" role="alert">
+                <ul class="mb-0">
+                    @foreach($errors->all() as $error)
+                        <li>{{ $error }}</li>
+                    @endforeach
+                </ul>
+                <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+            </div>
+        @endif
+
+        <form id="careerForm" action="{{ route('career.store') }}" method="POST" enctype="multipart/form-data">
+            @csrf
             <div class="row g-3">
                 <!-- Name -->
                 <div class="col-md-6">
                     <label for="name" class="form-label">Full Name *</label>
-                    <input type="text" id="name" name="name" class="form-control" required>
+                    <input type="text" id="name" name="name" value="{{ old('name') }}" class="form-control" required>
                 </div>
 
                 <!-- Email -->
                 <div class="col-md-6">
                     <label for="email" class="form-label">Email *</label>
-                    <input type="email" id="email" name="email" class="form-control" required>
+                    <input type="email" id="email" name="email" value="{{ old('email') }}" class="form-control" required>
                 </div>
 
                 <!-- Current Company -->
                 <div class="col-md-6">
                     <label for="company" class="form-label">Current Company</label>
-                    <input type="text" id="company" name="company" class="form-control">
+                    <input type="text" id="company" name="company" value="{{ old('company') }}" class="form-control">
                 </div>
 
                 <!-- Current CTC -->
                 <div class="col-md-3">
                     <label for="current_ctc" class="form-label">Current CTC</label>
-                    <input type="number" id="current_ctc" name="current_ctc" class="form-control" step="0.01">
+                    <input type="number" id="current_ctc" name="current_ctc" value="{{ old('current_ctc') }}" class="form-control" step="0.01">
                 </div>
 
                 <!-- Expected CTC -->
                 <div class="col-md-3">
                     <label for="expected_ctc" class="form-label">Expected CTC</label>
-                    <input type="number" id="expected_ctc" name="expected_ctc" class="form-control" step="0.01">
+                    <input type="number" id="expected_ctc" name="expected_ctc" value="{{ old('expected_ctc') }}" class="form-control" step="0.01">
                 </div>
 
                 <!-- Camera Capture -->

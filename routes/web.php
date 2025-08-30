@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\CareerController;
 use App\Http\Controllers\PageController;
 use Illuminate\Support\Facades\Route;
 
@@ -15,3 +16,4 @@ Route::get('/contact', [PageController::class, 'contact'])->name('contact');
 Route::get('/service', [PageController::class, 'service'])->name('service');
 Route::get('/feature',[PageController::class,'feature'])->name('feature');
 Route::get('/careers',[PageController::class,'careers'])->name('careers');
+Route::post('/career/store', [CareerController::class, 'store'])->name('career.store');
