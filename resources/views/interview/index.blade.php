@@ -262,12 +262,23 @@
             }
         }
 
-        // Try fullscreen on page load
+        // Show SweetAlert on page load
         window.addEventListener("load", () => {
-            goFullscreen();
+            Swal.fire({
+                title: "⚠️ Screen Will Be Locked!",
+                text: "You cannot exit fullscreen until you finish this interview/exam.",
+                icon: "warning",
+                confirmButtonText: "Start Exam",
+                allowOutsideClick: false,
+                allowEscapeKey: false,
+                backdrop: true
+            }).then(() => {
+                goFullscreen();
+                document.getElementById("examContent").style.display = "flex";
+            });
         });
 
-        // If user exits fullscreen, force back
+        // Keep fullscreen active
         document.addEventListener("fullscreenchange", () => {
             if (!document.fullscreenElement) {
                 goFullscreen();
@@ -286,7 +297,12 @@
 
         // Detect tab switch / minimize
         window.addEventListener("blur", () => {
-            alert("⚠️ You switched tabs! This will be reported.");
+            Swal.fire({
+                title: "⚠️ Warning!",
+                text: "You switched tabs! This will be reported.",
+                icon: "error",
+                confirmButtonText: "Back to Exam"
+            });
             // Optionally: auto-submit exam here
         });
     </script>
