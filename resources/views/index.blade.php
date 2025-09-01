@@ -20,7 +20,7 @@
                         </div>
                         <div class="ps-4">
                             <h5 class="text-white mb-0">Happy Clients</h5>
-                            <h1 class="text-white mb-0" data-toggle="counter-up">12345</h1>
+                            <h1 class="text-white mb-0" data-toggle="counter-up">120</h1>
                         </div>
                     </div>
                 </div>
@@ -33,7 +33,7 @@
                         </div>
                         <div class="ps-4">
                             <h5 class="text-primary mb-0">Projects Done</h5>
-                            <h1 class="mb-0" data-toggle="counter-up">12345</h1>
+                            <h1 class="mb-0" data-toggle="counter-up">200+</h1>
                         </div>
                     </div>
                 </div>
@@ -46,7 +46,7 @@
                         </div>
                         <div class="ps-4">
                             <h5 class="text-white mb-0">Win Awards</h5>
-                            <h1 class="text-white mb-0" data-toggle="counter-up">12345</h1>
+                            <h1 class="text-white mb-0" data-toggle="counter-up">21</h1>
                         </div>
                     </div>
                 </div>
@@ -65,9 +65,10 @@
                         <h5 class="fw-bold text-primary text-uppercase">About Us</h5>
                         <h1 class="mb-0">The Best IT Solution With 10 Years of Experience</h1>
                     </div>
-                    <p class="mb-4">Tempor erat elitr rebum at clita. Diam dolor diam ipsum et tempor sit. Aliqu diam
-                        amet diam et eos labore. Clita erat ipsum et lorem et sit, sed stet no labore lorem sit. Sanctus
-                        clita duo justo et tempor eirmod magna dolore erat amet</p>
+                    <p class="mb-4">We start by gaining a deep understanding of your business goals, challenges, and
+                        vision. Our team works closely with you to identify the key objectives and define the project
+                        scope. This collaborative approach ensures that we align our solutions with your specific needs,
+                        setting a clear direction for the project's success.t</p>
                     <div class="row g-0 mb-3">
                         <div class="col-sm-6 wow zoomIn" data-wow-delay="0.2s">
                             <h5 class="mb-3"><i class="fa fa-check text-primary me-3"></i>Award Winning</h5>

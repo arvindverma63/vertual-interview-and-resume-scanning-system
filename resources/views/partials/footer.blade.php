@@ -27,11 +27,11 @@
                             </div>
                             <div class="d-flex mb-2">
                                 <i class="bi bi-geo-alt text-primary me-2"></i>
-                                <p class="mb-0">123 Street, New York, USA</p>
+                                <p class="mb-0">609/Optimus | Sainath Nagar | Near Passport Office | Andheri(E) | Mumbai 400093</p>
                             </div>
                             <div class="d-flex mb-2">
                                 <i class="bi bi-envelope-open text-primary me-2"></i>
-                                <p class="mb-0">info@example.com</p>
+                                <p class="mb-0">info@rawsio.com</p>
                             </div>
                             <div class="d-flex mb-2">
                                 <i class="bi bi-telephone text-primary me-2"></i>
@@ -96,15 +96,7 @@
             <div class="row justify-content-end">
                 <div class="col-lg-8 col-md-6">
                     <div class="d-flex align-items-center justify-content-center" style="height: 75px;">
-                        <p class="mb-0">&copy; <a class="text-white border-bottom" href="#">Your Site
-                                Name</a>. All Rights Reserved.
-
-                            <!--/*** This template is free as long as you keep the footer author’s credit link/attribution link/backlink. If you'd like to use the template without the footer author’s credit link/attribution link/backlink, you can purchase the Credit Removal License from "https://htmlcodex.com/credit-removal". Thank you for your support. ***/-->
-                            Designed by <a class="text-white border-bottom" href="https://htmlcodex.com">HTML
-                                Codex</a>
-                        </p>
-                        <br>Distributed By: <a class="border-bottom" href="https://themewagon.com"
-                            target="_blank">ThemeWagon</a>
+                        <p class="mb-0">&copy; <a class="text-white border-bottom" href="#">Rawsio.com</a>. All Rights Reserved.
                     </div>
                 </div>
             </div>

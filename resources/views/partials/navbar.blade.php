@@ -11,10 +11,9 @@
         <div class="row gx-0">
             <div class="col-lg-8 text-center text-lg-start mb-2 mb-lg-0">
                 <div class="d-inline-flex align-items-center" style="height: 45px;">
-                    <small class="me-3 text-light"><i class="fa fa-map-marker-alt me-2"></i>123 Street, New York,
-                        USA</small>
-                    <small class="me-3 text-light"><i class="fa fa-phone-alt me-2"></i>+012 345 6789</small>
-                    <small class="text-light"><i class="fa fa-envelope-open me-2"></i>info@example.com</small>
+                    <small class="me-3 text-light"><i class="fa fa-map-marker-alt me-2"></i>609/Optimus | Sainath Nagar | Near Passport Office | Andheri(E) | Mumbai 400093</small>
+                    <small class="me-3 text-light"><i class="fa fa-phone-alt me-2"></i>+91 6306993456</small>
+                    <small class="text-light"><i class="fa fa-envelope-open me-2"></i>info@rawsio.com</small>
                 </div>
             </div>
             <div class="col-lg-4 text-center text-lg-end">
@@ -104,10 +103,10 @@
                                 </h5>
                                 <h1 class="display-1 text-white mb-md-4 animated zoomIn">Creative & Innovative Digital
                                     Solution</h1>
-                                <a href="quote.html"
+                                <a href="/contact"
                                     class="btn btn-primary py-md-3 px-md-5 me-3 animated slideInLeft">Free
                                     Quote</a>
-                                <a href=""
+                                <a href="/contact"
                                     class="btn btn-outline-light py-md-3 px-md-5 animated slideInRight">Contact Us</a>
                             </div>
                         </div>
