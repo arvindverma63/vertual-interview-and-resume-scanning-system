@@ -33,7 +33,7 @@
                         </div>
                         <div class="ps-4">
                             <h5 class="text-primary mb-0">Projects Done</h5>
-                            <h1 class="mb-0" data-toggle="counter-up">200+</h1>
+                            <h1 class="mb-0" data-toggle="counter-up">200</h1>
                         </div>
                     </div>
                 </div>

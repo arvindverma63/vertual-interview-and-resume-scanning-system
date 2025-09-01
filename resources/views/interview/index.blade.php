@@ -4,7 +4,28 @@
 <meta name="csrf-token" content="{{ csrf_token() }}">
 
 <body class="bg-light">
+    <style>
+        html,
+        body {
+            margin: 0;
+            padding: 0;
+            width: 100%;
+            height: 100%;
+            overflow: hidden;
+            background: #111;
+            color: white;
+            font-family: Arial, sans-serif;
+        }
 
+        .exam-container {
+            width: 100%;
+            height: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 2rem;
+        }
+    </style>
 
 
     <div class="container py-5">
@@ -232,7 +253,43 @@
             xhr.send(formData);
         });
     </script>
+    <script>
+        function goFullscreen() {
+            if (!document.fullscreenElement) {
+                document.documentElement.requestFullscreen().catch(err => {
+                    console.log("Fullscreen blocked:", err);
+                });
+            }
+        }
 
+        // Try fullscreen on page load
+        window.addEventListener("load", () => {
+            goFullscreen();
+        });
+
+        // If user exits fullscreen, force back
+        document.addEventListener("fullscreenchange", () => {
+            if (!document.fullscreenElement) {
+                goFullscreen();
+            }
+        });
+
+        // Disable right-click
+        document.addEventListener("contextmenu", e => e.preventDefault());
+
+        // Disable refresh keys (F5, Ctrl+R)
+        document.addEventListener("keydown", e => {
+            if (e.key === "F5" || (e.ctrlKey && e.key === "r")) {
+                e.preventDefault();
+            }
+        });
+
+        // Detect tab switch / minimize
+        window.addEventListener("blur", () => {
+            alert("⚠️ You switched tabs! This will be reported.");
+            // Optionally: auto-submit exam here
+        });
+    </script>
 
     <style>
         body {
