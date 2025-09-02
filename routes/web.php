@@ -32,3 +32,4 @@ Route::get('/interview-form', function () {
 
 // Route to handle form submission
 Route::post('/send-interview-invitation', [InterviewController::class, 'sendInvitation'])->name('send-interview-invitation');
+Route::get('/career/response', [CareerController::class, 'index'])->name('career.index');

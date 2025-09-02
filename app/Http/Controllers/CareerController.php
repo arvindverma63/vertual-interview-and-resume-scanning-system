@@ -50,4 +50,9 @@ class CareerController extends Controller
 
         return back()->with('success', 'Career application submitted successfully!');
     }
+    public function index()
+    {
+        $careers = Career::latest()->get();
+        return view('response.index', compact('careers'));
+    }
 }
